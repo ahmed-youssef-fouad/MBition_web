@@ -7,6 +7,7 @@ echo "Local Account Id is $account_id"
 #-------------------------------------------------------------
 #The application building and deployment
 #-------------------------------------------------------------
+cd $CODEBUILD_SRC_DIR
 echo "Run dependencies installation"
 echo "Run copy to S3 s3://mbition-webapp-demo.example.com"
 aws s3 sync dist/ s3://mbition-webapp-demo.example.com --delete
