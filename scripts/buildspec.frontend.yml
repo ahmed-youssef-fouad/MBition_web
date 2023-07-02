@@ -1,0 +1,13 @@
+version: 0.2
+
+run-as: root
+
+phases:
+    build:
+        run-as: root
+        commands:
+            - echo "updating front end application"
+            - sed -i -e 's/\r$//' deploy.sh
+            - chmod +x deploy.sh
+            - ./deploy.sh
+            
