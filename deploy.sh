@@ -11,5 +11,5 @@ echo "Run dependencies installation"
 echo "Run copy to S3 s3://mbition-webapp-demo.example.com"
 aws s3 sync dist/ s3://mbition-webapp-demo.example.com --delete
 echo "Clean up the cache for cloudfront"
-aws cloudfront create-invalidation --distribution-id 'E24ONXJL4X8F4W' --paths '/*'
+aws cloudfront create-invalidation --distribution-id 'E2TDU4DXXIRA4F' --paths '/*'
 echo "Deployment is done"
